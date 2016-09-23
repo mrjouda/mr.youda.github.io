@@ -5,15 +5,18 @@ You can see the live version of this content here:
 https://docs.fedoraproject.org/en-US/Fedora/21/html/System_Administrators_Guide/ch-yum.html#sec-Updating_Packages
 
 
-Updating Packages
+# 5.1.2. Updating Packages
+
 You can choose to update a single package, multiple packages, or all packages at once. If any dependencies of the package (or packages) you update have updates available themselves, then they are updated too.
-Updating a Single Package
-To update a single package, run the following command as root:
 
-yum update package_name
+## Updating a Single Package
 
-For example, to update the udev package, type:
+To update a single package, run the following command as __root:__
 
+    yum update package_name
+
+For example, to update the _udev_ package, type:
+```
 ~]# yum update udev
 Loaded plugins: langpacks, presto, refresh-packagekit
 Updating Red Hat repositories.
@@ -39,3 +42,4 @@ Upgrade       1 Package(s)
 
 Total download size: 1.9 M
 Is this ok [y/N]:
+```
